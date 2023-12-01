@@ -1,5 +1,4 @@
 # @Pinkulani 1.12.2023
-import math
 
 def Pythagoras():
     print("Put 0 for value you want to calculate (2**2 + 0 = 5**2)")
@@ -10,9 +9,9 @@ def Pythagoras():
     match A:
         case 0:
             # A is unknown
-            Result = (C**2) - (B**2)
+            Result = (C ** 2) - (B ** 2)
             if Result >= 0:
-                print(math.sqrt(Result))
+                print(Result ** 0.5)
             else:
                 print("No solution for real numbers!")
         
@@ -20,12 +19,12 @@ def Pythagoras():
             match B:
                 case 0:
                     # B is unknown
-                    Result = (C**2) - (A**2)
+                    Result = (C ** 2) - (A ** 2)
                     if Result >= 0:
-                        print(math.sqrt(Result))
+                        print(Result ** 0.5)
                     else:
                         print("No solution for real numbers!")
 
                 case _:
                     # C is unknown
-                    print(math.sqrt((A**2) + (B**2)))
+                    print(((A ** 2) + (B ** 2)) ** 0.5)
